@@ -5,7 +5,7 @@ import ContactCard from "../ContactCard/ContactCard";
 
 function AddContact({contact , setContact}){
 
-    const [display , setDisplay] = useState('d-none');
+    const [display , setDisplay] = useState('ContactForm');
     const [form , setForm] = useState([
         {
             id: Math.floor(Math.random() * 1000),
@@ -19,10 +19,10 @@ function AddContact({contact , setContact}){
     ])
 
     const manageDisplay = () =>{
-        if (display === 'd-none'){
-            setDisplay('ContactForm')
-        }else {
+        if (display === 'ContactForm'){
             setDisplay('d-none')
+        }else {
+            setDisplay('ContactForm')
         }
     }
 
