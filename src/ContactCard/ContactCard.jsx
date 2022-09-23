@@ -3,7 +3,8 @@ import './ContactCard.style.css'
 import React, {useState} from "react";
 
 
-function ContactCard({state , setState}){
+function ContactCard({state , setState , filter}){
+    const [search , setSearch] = useState('');
     const [deleteMessage , setdeleteMessage] = useState('d-none');
     const [id , setId] = useState(null)
    const manageDeleteMessage = (id)=>{
@@ -32,7 +33,7 @@ function ContactCard({state , setState}){
                     </div>
                 </div>
                 {
-                    state.map( item => (
+                    state.filter(contact => contact.name.toUpperCase().includes(search.toUpperCase()) && filter === 'All'? true : contact.favorite === filter).map( item => (
                         <div className={'contactCard'} key={item.id}>
                             <div className={'avatar'}>
 
