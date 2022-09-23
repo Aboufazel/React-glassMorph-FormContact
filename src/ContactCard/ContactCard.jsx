@@ -3,8 +3,8 @@ import './ContactCard.style.css'
 import React, {useState} from "react";
 
 
-function ContactCard({state , setState , filter}){
-    const [search , setSearch] = useState('');
+function ContactCard({state , setState , filter , search}){
+
     const [deleteMessage , setdeleteMessage] = useState('d-none');
     const [id , setId] = useState(null)
    const manageDeleteMessage = (id)=>{

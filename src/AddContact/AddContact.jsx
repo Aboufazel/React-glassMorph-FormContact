@@ -13,7 +13,7 @@ function AddContact({contact , setContact}){
         {id:2 , title: 'F'},
         {id:3 , title: 'N'},
     ];
-
+    const [search , setSearch] = useState('');
     const [form , setForm] = useState([
         {
             id: Math.floor(Math.random() * 1000),
@@ -41,15 +41,21 @@ function AddContact({contact , setContact}){
         setForm({...form , [e.target.name]: e.target.value});
     }
 
+    const manageSearch = e=>{
+        setSearch(e.target.value)
+    };
+
+
+
     const manageSubmit = e =>{
         e.preventDefault();
-        console.log(form);
+        setContact([...contact , {id:Math.floor(Math.random()*1000) , name:form.name , age:form.age , mail:form.mail , phone: form.phone , favorite:form.favorite , country:form.country}])
     }
     return(
        <div>
            <div className={'filterRow'}>
                <div className={'searchBox'}>
-                   <input type={'text'} placeholder={'SearchContact...'}/>
+                   <input onChange={manageSearch} placeholder={'SearchContact...'}/>
                </div>
                <div className={'filtersItemsRow'}>
                {filterOptions.map(item => (
@@ -88,7 +94,7 @@ function AddContact({contact , setContact}){
                <div className={'rightBox'}>
                    <div onClick={manageDisplay}>
                        <div>
-                           <ContactCard state={contact} setState={setContact} filter={filter}/>
+                           <ContactCard state={contact} setState={setContact} filter={filter} search={search}/>
                        </div>
                        <IoIosPersonAdd className={'PersonAdd'}/>
                    </div>
