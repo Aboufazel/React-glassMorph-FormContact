@@ -1,0 +1,173 @@
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .contactBody{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .leftBox{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .rightBox{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+
+.contactBody{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.btnRow{
+    display: flex;
+    justify-content: start !important;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.deleteBtn{
+    background: rgba( 208, 2, 27, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: bold;
+    color: #F4EEE8;
+    padding: 7px;
+}
+
+.editBtn{
+    background: rgba( 245, 166, 35, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    font-weight: bold;
+    color: #F4EEE8;
+    padding: 7px;
+}
+
+.PersonAdd{
+    background: rgba( 163, 189, 237, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #304352;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    border-radius: 50%;
+    padding: 8px;
+    bottom: 5px;
+    width: auto;
+    height: 35px;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 2048px) {
+    .ContactForm{
+        display: flex;
+        width: 50% !important;
+        padding: 0 18px;
+        flex-direction: column;
+    }
+    .leftBox{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .rightBox{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+
+.ContactForm{
+    background: rgba( 163, 189, 237, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    width: 65%;
+    padding: 0 18px;
+    margin: 0 0 0 35px;
+    flex-direction: column;
+}
+
+.d-none{
+    display: none;
+    transition: 2s;
+}
+.ContactForm label{
+    font-weight: bold;
+    font-size: 13px;
+    color: #F4EEE8;
+    font-family: Inter;
+    margin: 5px 0;
+}
+
+.ContactForm input{
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+}
+.ContactForm button{
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    padding: 8px 5px;
+    width: 50%;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+}
+
+.ContactForm button:hover{
+    background: #F5CEBE;
+    color:  #114E60;
+    box-shadow: 0 0 5px #114E60;
+    cursor: pointer;
+}
+.ContactForm select{
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 2px #114E60;
+    padding: 5px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+}
+
+.btnRow{
+    display: flex;
+    justify-content: center;
+}
