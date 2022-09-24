@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './App.css';
-import Header from "./Header/Header";
-import AddContact from "./AddContact/AddContact";
+import Header from "./components/Header/Header";
+import AddContact from "./components/AddContact/AddContact";
 
 function App() {
     const [contact , setContact] = useState([
